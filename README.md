@@ -2,7 +2,11 @@
 
 Simple yet effective i18n (internationalization) for your Svelte project.
 
-## Import
+---
+
+## Svelte
+
+### Import
 
 Add the following import statement to your Svelte file:
 
@@ -10,14 +14,14 @@ Add the following import statement to your Svelte file:
 import { t, locale, locales } from '$lib/locales/i18n';
 ```
 
-## Usage
+### Usage
 To translate a text, use Svelte's reactive statements:
 
 ```javascript
 <p>{$t('welcome.hi')}</p>
 ```
 
-## Changing Locale
+### Changing Locale
 To change the locale, use a select dropdown. Bind the locale to it.
 
 ```javascript
@@ -28,7 +32,7 @@ To change the locale, use a select dropdown. Bind the locale to it.
 </select>
 ```
 
-## Complete Example
+### Complete Example
 
 Here's a complete example in a single Svelte file, integrating all the steps:
 
@@ -44,3 +48,6 @@ Here's a complete example in a single Svelte file, integrating all the steps:
 </select>
 
 <p>{$t('welcome.hi')}</p>
+```
+
+---
